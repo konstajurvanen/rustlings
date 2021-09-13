@@ -35,7 +35,7 @@ fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
     // map is a hashmap with String keys and Progress values.
     // map = { "variables1": Complete, "from_str": None, ... }
     map.values().map(|x| {
-        if x == &value { &1 } else { &0 }
+        if x == &value { 1 } else { 0 }
     }).sum()
 }
 
